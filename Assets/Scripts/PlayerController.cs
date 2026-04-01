@@ -80,8 +80,7 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.CompareTag("Ground"))
             isGrounded = true;
     }
-
-    void OnCollisionExit2D(Collision2D col)
+        void OnCollisionExit2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Ground"))
             isGrounded = false;
